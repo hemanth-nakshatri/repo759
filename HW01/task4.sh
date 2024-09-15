@@ -6,5 +6,4 @@
 #SBATCH --output=FirstSlurm.out      # Standard output file
 #SBATCH --error=FirstSlurm.err       # Standard error file
 
-# Print the hostname of the compute node running the job
-hostname
+echo $SLURMD_NODENAME
