@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    int n = std::atoi(argv[1]);
+    std::size_t n = std::atoi(argv[1]);
 
     if (n <= 0) {
         std::cout << "n must be a positive integer." << std::endl;
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     float *output = new float[n];
 
     // Create a random array
-    for (int i = 0; i < n; i++) {
+    for (std::size_t i = 0; i < n; i++) {
         arr[i] = dist(generator);
     }
 
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
     //  deallocate memory
     delete[] arr;
     delete[] output;
-    
+
     return 0;
 
 }

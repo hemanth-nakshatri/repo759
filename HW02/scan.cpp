@@ -9,7 +9,7 @@ void scan(const float *arr, float *output, std::size_t n)
     float temp = 0;
 
     // Perform the inclusive scan for the elements.
-    for (int i = 0; i < n; i++)
+    for (std::size_t i = 0; i < n; i++)
     {
         temp += arr[i];
         output[i] = temp;
