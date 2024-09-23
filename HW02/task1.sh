@@ -2,7 +2,7 @@
 #SBATCH --job-name=hw2
 #SBATCH --partition=instruction
 #SBATCH --time=00-00:30:00
-# SBATCH --ntasks=1
+#SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --output=scan_scaling.out
 #SBATCH --error=scan_scaling.err
