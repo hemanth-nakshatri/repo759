@@ -50,8 +50,8 @@ int main(int argc, char *argv[])
     std::cout << duration_millis.count() << std::endl;
 
     //  Print out the first and last elements of the output array
-    std::cout << output[0] << std::endl;
-    std::cout << output[n - 1] << std::endl;
+    // std::cout << output[0] << std::endl;
+    // std::cout << output[n - 1] << std::endl;
 
     //  deallocate memory
     delete[] arr;
