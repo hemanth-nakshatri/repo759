@@ -84,6 +84,17 @@ int main(int argc, char *argv[])
 
     // Print last element of C
     std::cout << C[n * n - 1] << std::endl;
+
+    //  Print matrix output
+    // std::cout << "Output Matrix:" << std::endl;
+    // for (std::size_t i = 0; i < n; ++i)
+    // {
+    //     for (std::size_t j = 0; j < n; ++j)
+    //     {
+    //         std::cout << C[i * n + j] << " ";
+    //     }
+    //     std::cout << std::endl;
+    // }
   }
 
   // Deallocate memory
