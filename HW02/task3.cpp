@@ -12,13 +12,18 @@ using std::chrono::high_resolution_clock;
 int main(int argc, char *argv[])
 {
   // Arbitrary default value if no n is passed
-  unsigned int n = 200;
+  unsigned int n = 1024;
 
   // Read n if passed through command line
   if (argc > 1)
   {
     std::stringstream sstream(argv[1]);
     sstream >> n;
+  }
+
+  if (n < 1000)
+  {
+    std::cout << "n must be >= 1000 according to the PDF?" << std::endl;
   }
 
   std::random_device entropy_source;
@@ -41,7 +46,6 @@ int main(int argc, char *argv[])
   std::cout << n << std::endl;
   for (int mmul_func = 1; mmul_func <= 4; ++mmul_func)
   {
-    // Initialize C to 0
     for (unsigned int i = 0; i < n * n; i++)
     {
       C[i] = 0;

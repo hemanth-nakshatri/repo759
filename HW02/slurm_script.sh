@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=2
 # SBATCH --nodes=3
 # SBATCH --array=0-3
-#SBATCH -o hw2.out -e hw2.err
+#SBATCH -o hw2_log.out -e hw2_err.err
 
 echo "Running task1"
 g++ scan.cpp task1.cpp -Wall -O3 -std=c++17 -o task1
