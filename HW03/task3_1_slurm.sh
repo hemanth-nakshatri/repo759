@@ -14,8 +14,6 @@ g++ task3.cpp msort.cpp -Wall -O3 -std=c++17 -fopenmp -o task3
 
 for ts_exp in {1..10}; do
     ts=$((2 ** ts_exp))  # Compute 2^ts_exp
-    for t in {1..20}; do
-        echo "Running with t=$t threads and threshold=2^$ts_exp ($ts)"
-        ./task3 1000000 $t $ts  # Sorting array of size 1,000,000
-    done
+        echo "Running with t=8 threads and threshold=2^$ts_exp ($ts)"
+        ./task3 1000000 8 $ts  # Sorting array of size 1,000,000
 done
