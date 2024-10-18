@@ -14,5 +14,5 @@ g++ task3.cpp msort.cpp -Wall -O3 -std=c++17 -fopenmp -o task3
 # Run task3 with ts=128 (2^6) for t=1 to t=20 threads
 for t in {1..20}; do
     echo "Running with t=$t threads and ts=32"
-    ./task3 1000000 $t 128  # Sorting array of size 1,000,000 with ts=32
+    ./task3 1000000 $t 128
 done
